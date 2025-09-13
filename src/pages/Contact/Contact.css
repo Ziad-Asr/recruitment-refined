@@ -1,0 +1,251 @@
+.contact-page {
+  min-height: 100vh;
+}
+
+.contact-hero {
+  background: var(--gradient-primary);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.contact-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.contact-hero-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-methods {
+  background: var(--white);
+}
+
+.contact-methods h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.contact-method {
+  background: var(--gray-50);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.method-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+  color: var(--gray-800);
+  margin-bottom: 0.5rem;
+}
+
+.contact-method p {
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+}
+
+.method-contact {
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.method-response {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.contact-form-section {
+  background: var(--gray-50);
+}
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-form-container h2 {
+  margin-bottom: 2rem;
+}
+
+.contact-map-container h3 {
+  margin-bottom: 1rem;
+}
+
+.location-info {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.location-info h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.location-info p {
+  margin-bottom: 0.5rem;
+}
+
+.office-locations {
+  background: var(--white);
+}
+
+.office-locations h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.office-card {
+  background: var(--gray-50);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all var(--transition-normal);
+}
+
+.office-card.primary {
+  border-color: var(--primary-blue);
+  background: rgba(30, 64, 175, 0.05);
+}
+
+.office-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.office-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.office-address,
+.office-phone,
+.office-email,
+.office-manager {
+  margin-bottom: 0.5rem;
+  color: var(--gray-700);
+}
+
+.faq-section {
+  background: var(--gray-50);
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.faq-item h3 {
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 3rem 0;
+  }
+
+  .contact-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-methods-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-method {
+    padding: 1.5rem;
+  }
+
+  .offices-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .contact-hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .contact-method {
+    padding: 1.25rem;
+  }
+
+  .office-card {
+    padding: 1.5rem;
+  }
+
+  .faq-item {
+    padding: 1.5rem;
+  }
+}

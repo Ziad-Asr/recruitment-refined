@@ -1,0 +1,383 @@
+.services-page {
+  min-height: 100vh;
+}
+
+.services-hero {
+  background: var(--gradient-primary);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.services-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.services-hero-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.primary-service {
+  background: var(--white);
+}
+
+.service-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.service-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-header h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.process-section,
+.benefits-section,
+.industries-section {
+  margin-bottom: 4rem;
+}
+
+.process-section h3,
+.benefits-section h3,
+.industries-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.process-step {
+  background: var(--gray-50);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--primary-blue);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0 auto 1rem;
+}
+
+.process-step h4 {
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.process-step p {
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-item {
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.benefit-item:hover {
+  border-color: var(--primary-blue);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-item h4 {
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.benefit-item p {
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.industry-item {
+  background: var(--gray-50);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--gray-700);
+  transition: all var(--transition-fast);
+}
+
+.industry-item:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+.secondary-service {
+  background: var(--gray-50);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-item {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feature-item p {
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+.service-note {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--secondary-orange);
+  text-align: center;
+}
+
+.service-note p {
+  color: var(--gray-700);
+  font-style: italic;
+  margin: 0;
+}
+
+.service-comparison {
+  background: var(--white);
+}
+
+.service-comparison h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.comparison-item {
+  background: var(--gray-50);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--gray-200);
+}
+
+.comparison-item h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.best-for {
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.comparison-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-item li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--gray-200);
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--gray-700);
+}
+
+.comparison-item li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+.comparison-item li:last-child {
+  border-bottom: none;
+}
+
+.services-cta {
+  background: var(--gradient-primary);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.services-cta h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  min-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 3rem 0;
+  }
+
+  .services-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-header h2 {
+    font-size: 2rem;
+  }
+
+  .service-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .process-step {
+    padding: 1.5rem;
+  }
+
+  .benefit-item,
+  .feature-item {
+    padding: 1.5rem;
+  }
+
+  .comparison-item {
+    padding: 1.5rem;
+  }
+
+  .services-cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons .btn {
+    min-width: 250px;
+  }
+}
