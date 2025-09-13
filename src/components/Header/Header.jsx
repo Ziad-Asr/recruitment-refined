@@ -10,17 +10,18 @@ const Header = () => {
     companyInfo, 
     isMobileMenuOpen, 
     toggleMobileMenu,
-    closeMobileMenu 
+    closeMobileMenu,
+    isScrolled
   } = useHeader();
 
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="header-content">
           {/* Logo */}
           <Link to="/" className="header-logo" onClick={closeMobileMenu}>
             <h2 className="logo-text">{companyInfo.name}</h2>
-            {/* <span className="logo-tagline">{companyInfo.tagline}</span> */}
+            <span className="logo-tagline">{companyInfo.tagline}</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,6 +52,7 @@ const Header = () => {
             className="mobile-menu-btn"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
+            aria-expanded={isMobileMenuOpen}
           >
             <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
               <span></span>

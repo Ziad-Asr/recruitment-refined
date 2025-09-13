@@ -3,6 +3,7 @@ import { navigationItems, companyInfo } from '../../constants/HeaderData';
 
 export const useHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -12,10 +13,21 @@ export const useHeader = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Close mobile menu on window resize
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 767) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -42,6 +54,7 @@ export const useHeader = () => {
     companyInfo,
     isMobileMenuOpen,
     toggleMobileMenu,
-    closeMobileMenu
+    closeMobileMenu,
+    isScrolled
   };
 };
