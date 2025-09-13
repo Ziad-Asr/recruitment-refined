@@ -12,17 +12,16 @@
 }
 
 .header-content {
-  width: 1300px;
-  max-width: 1400px;
   width: 100%;
+  max-width: 1200px; /* changed from 1300px */
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.3rem 2rem;
+  padding: 1rem 1.5rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-radius: 50px;
+  border-radius: 40px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -172,6 +171,7 @@
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition-normal);
+  border-radius: 0 0 20px 20px; /* smoother dropdown look */
 }
 
 .mobile-nav.open {
@@ -201,31 +201,32 @@
 }
 
 /* Responsive Design */
+
+/* Tablet (<= 1024px) */
 @media (max-width: 1024px) {
   .header-content {
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
   }
-  
+
   .nav-list {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }
 
+/* Mobile (<= 900px) */
 @media (max-width: 900px) {
   .header {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
   }
 
   .header-content {
-    width: calc(100% - 50px);
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
   }
 
-  .desktop-nav {
-    display: none;
-  }
-
+  .desktop-nav,
   .desktop-only {
     display: none;
   }
@@ -236,10 +237,14 @@
 
   .mobile-nav {
     display: block;
-    margin-top: 1rem;
-    border-radius: 20px;
-    left: 1rem;
-    right: 1rem;
+    margin: 0; /* removed margin-top */
+    border-radius: 0 0 15px 15px;
+    padding: 0.5rem 0;
+  }
+
+  .mobile-nav .nav-link {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
   }
 
   .logo-text {
@@ -251,26 +256,31 @@
   }
 }
 
+/* Small Mobile (<= 480px) */
 @media (max-width: 480px) {
   .header {
     padding: 0.5rem;
   }
 
   .header-content {
-    min-width: auto;
-    width: calc(100% - 50px);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 15px;
   }
 
   .logo-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .logo-tagline {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .nav-list {
     gap: 1rem;
+  }
+
+  .contact-link {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
   }
 }
