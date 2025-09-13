@@ -324,6 +324,7 @@
   }
 
   .header-content {
+    background-color:red;
     padding: 0.6rem 1rem;
     border-radius: 25px;
   }
