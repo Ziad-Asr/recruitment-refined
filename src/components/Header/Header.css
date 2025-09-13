@@ -220,14 +220,14 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .header {
     padding: 0.5rem 1rem;
   }
 
   .header-content {
     min-width: auto;
-    width: calc(100% - 2rem);
+    width: calc(100% - 1rem);
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
   }
@@ -258,12 +258,6 @@
 
   .logo-tagline {
     font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .header-content {
-    width: calc(100% - 1rem);
   }
 }
 
