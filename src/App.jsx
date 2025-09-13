@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <main style={{ paddingTop: '80px' }}>
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
