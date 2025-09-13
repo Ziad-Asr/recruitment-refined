@@ -12,14 +12,14 @@
 }
 
 .header-content {
-  min-width: 1400px;
+  min-width: 1300px;
   max-width: 1400px;
-  width: 100%;
+  width: calc(100% - 100px);
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.3rem 2.25rem;
+  padding: 1.3rem 2rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 50px;
@@ -222,14 +222,14 @@
 
 @media (max-width: 900px) {
   .header {
-    padding: 0.75rem 0.5rem;
+    padding: 0.5rem 1rem;
   }
 
   .header-content {
     min-width: auto;
-    width: calc(100% - 1rem);
-    padding: 1rem 1.25rem;
-    border-radius: 30px;
+    width: calc(100% - 2rem);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
   }
 
   .desktop-nav {
@@ -248,55 +248,42 @@
     display: block;
     margin-top: 1rem;
     border-radius: 20px;
-    left: 0.5rem;
-    right: 0.5rem;
+    left: 1rem;
+    right: 1rem;
   }
 
   .logo-text {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   .logo-tagline {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding: 0.6rem 0.5rem;
-  }
-
   .header-content {
     width: calc(100% - 1rem);
-    padding: 0.9rem 1.25rem;
-  }
-
-  .logo-text {
-    font-size: 1.3rem;
-  }
-
-  .logo-tagline {
-    font-size: 0.72rem;
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
   }
 
   .header-content {
     min-width: auto;
     width: calc(100% - 1rem);
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .logo-tagline {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
   }
 
   .nav-list {
