@@ -222,14 +222,14 @@
 
 @media (max-width: 900px) {
   .header {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
   }
 
   .header-content {
     min-width: auto;
     width: calc(100% - 2rem);
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
+    padding: 1rem 2rem;
+    border-radius: 30px;
   }
 
   .desktop-nav {
@@ -253,37 +253,50 @@
   }
 
   .logo-text {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
 
   .logo-tagline {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 0.6rem 0.8rem;
+  }
+
   .header-content {
-    width: calc(100% - 1rem);
+    width: calc(100% - 1.6rem);
+    padding: 0.9rem 1.8rem;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+
+  .logo-tagline {
+    font-size: 0.72rem;
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    padding: 0.5rem;
+    padding: 0.5rem 0.6rem;
   }
 
   .header-content {
     min-width: auto;
-    width: calc(100% - 1rem);
-    padding: 0.5rem 1rem;
+    width: calc(100% - 1.2rem);
+    padding: 0.8rem 1.5rem;
   }
 
   .logo-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .logo-tagline {
-    font-size: 0.65rem;
+    font-size: 0.68rem;
   }
 
   .nav-list {
