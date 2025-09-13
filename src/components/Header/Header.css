@@ -204,14 +204,12 @@
 @media (max-width: 1440px) {
   .header-content {
     min-width: auto;
-    width: calc(100% - 2rem);
   }
 }
 
 @media (max-width: 1024px) {
   .header-content {
     min-width: auto;
-    width: calc(100% - 2rem);
     padding: 1rem 1.5rem;
   }
   
@@ -220,14 +218,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header {
     padding: 0.5rem 1rem;
   }
 
   .header-content {
-    min-width: auto;
-    width: calc(100% - 1rem);
+    width: calc(100% - 50px);
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
   }
@@ -268,7 +265,7 @@
 
   .header-content {
     min-width: auto;
-    width: calc(100% - 1rem);
+    width: calc(100% - 50px);
     padding: 0.5rem 1rem;
   }
 
