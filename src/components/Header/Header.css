@@ -201,15 +201,8 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1440px) {
-  .header-content {
-    min-width: auto;
-  }
-}
-
 @media (max-width: 1024px) {
   .header-content {
-    min-width: auto;
     padding: 1rem 1.5rem;
   }
   
