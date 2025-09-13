@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="header-logo" onClick={closeMobileMenu}>
             <h2 className="logo-text">{companyInfo.name}</h2>
-            <span className="logo-tagline">{companyInfo.tagline}</span>
+            {/* <span className="logo-tagline">{companyInfo.tagline}</span> */}
           </Link>
 
           {/* Desktop Navigation */}
